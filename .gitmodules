@@ -1,3 +1,12 @@
 [submodule "Tools/AS/asl-releases"]
 	path = Tools/AS/asl-releases
 	url = git@github.com:garrettjwilke/asl-releases
+[submodule "Tools/AS/md-modules"]
+	path = Tools/AS/md-modules
+	url = https://github.com/vladikcomper/md-modules.git
+[submodule "Tools/AS/mdtools"]
+	path = Tools/AS/mdtools
+	url = https://github.com/sikthehedgehog/mdtools
+[submodule "Tools/AS/p2bin"]
+	path = Tools/AS/p2bin
+	url = https://github.com/Clownacy/p2bin.git
