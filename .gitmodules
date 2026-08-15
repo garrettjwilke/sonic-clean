@@ -1,0 +1,3 @@
+[submodule "Tools/AS/asl-releases"]
+	path = Tools/AS/asl-releases
+	url = git@github.com:garrettjwilke/asl-releases
