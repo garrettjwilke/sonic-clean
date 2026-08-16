@@ -1,4 +1,5 @@
-asl
-convsym
-p2bin
-romfix
+asl*
+convsym*
+p2bin*
+romfix*
+*.msg

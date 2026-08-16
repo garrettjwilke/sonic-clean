@@ -182,6 +182,15 @@ fi
 # Ensure execute permissions on binary tools
 chmod +x "${DEST_DIR}"/asl* "${DEST_DIR}"/p2bin* "${DEST_DIR}"/convsym* "${DEST_DIR}"/romfix* 2>/dev/null || true
 
+# Clean up intermediate build artifacts from submodule sources
+echo ""
+echo "Cleaning up submodule build directories..."
+make -C "${AS_DIR}" clean >/dev/null 2>&1 || true
+make -C "${ROMFIX_DIR}" clean >/dev/null 2>&1 || true
+make -C "${CONVSYM_DIR}" clean >/dev/null 2>&1 || true
+rm -rf "Tools/AS/md-modules/build/utils"
+rm -rf "${P2BIN_DIR}/build"
+
 echo ""
 echo "=================================================="
 echo " Build & Installation Complete!                   "
